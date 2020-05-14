@@ -13,8 +13,28 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+    <div class="infobox">
+      <table>
+        <tr>
+          <th>for</th>
+          <th>organized by</th>
+          <th>twendercrafters</th>
+        </tr>
+        <tr>
+          <td>{{ page.for }}</td>
+          <td>{% for person in page.organizers %}
+                {{ person }}<br/>
+              {% endfor %}</td>
+          <td>{% for person in page.twendercrafters %}
+                {{ person }}<br/>
+              {% endfor %}</td>
+        </tr>
+      </table>
+    </div>
+    <hr/>
   </header>
 
+  
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
