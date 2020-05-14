@@ -17,17 +17,26 @@ layout: default
       <table>
         <tr>
           <th>for</th>
-          <th>organized by</th>
-          <th>twendercrafters</th>
+          <td>{{ page.for }}</td>
         </tr>
         <tr>
-          <td>{{ page.for }}</td>
-          <td>{% for person in page.organizers %}
-                {{ person }}<br/>
-              {% endfor %}</td>
-          <td>{% for person in page.twendercrafters %}
-                {{ person }}<br/>
-              {% endfor %}</td>
+          <th>organized by</th>
+          <td>
+            <ul>
+              {% for person in page.organizers %}
+                <li>{{ person }}</li>
+              {% endfor %}
+            </ul>
+        </tr>
+        <tr>
+          <th>twendercrafters</th>
+          <td>
+            <ul>
+              {% for person in page.twendercrafters %}
+                <li>{{ person }}</li>
+              {% endfor %}
+            </ul>
+          </td>
         </tr>
       </table>
     </div>
