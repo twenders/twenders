@@ -1,5 +1,5 @@
 # twenders
-a web archive of twenders, served live at [twenders.netlify.app](twenders.netlify.app)
+a web archive of twenders, served live at [twenders.netlify.app](https://twenders.netlify.app)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e3537254-fb7f-4194-a066-fe5908744756/deploy-status)](https://app.netlify.com/sites/twenders/deploys)
 
@@ -26,13 +26,25 @@ twendercrafters:
   - Zevi and Zoe
   - Katie and Jacob (Tacko & Jebia)
 for: M&P 36th anniversary
+description: This puzzle was made as a way for Mama to deliver a surprise anniversary present to Papa.
 ---
 ````
 
-then, whatever markdown or html content you want, like
+then, whatever markdown (or html) content you want, like
 
 ```markdown
 This is a twender which led to a tandem bicycle!
 
-Here's a previous one: [thetwender.wordpress.com](thetwender.wordpress.com).
+Here's a link to an image in the same folder: [image title here](image.jpg).
+
+Here's an inline image: ![alt text](image.jpg)
+
+Here's an inline image with size specified:
+<a  href="done1.jpg"><img src="done1.jpg" width="200"/></a>
+
+Here's a link to an outside site: [thetwender](http://thetwender.wordpress.com).
 ```
+
+Take a look at what's in the repository already for an idea of how it works.
+
+For more on markdown formatting, [see here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
