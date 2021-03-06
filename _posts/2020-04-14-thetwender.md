@@ -14,4 +14,4 @@ for: Zevi
 
 The first entirely online twender!
 
-At [thetwender.wordpress.com](thetwender.wordpress.com)
+At [thetwender.wordpress.com](http://thetwender.wordpress.com)
