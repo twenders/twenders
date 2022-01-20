@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# ignore dev- folders (for reactjs app(s))
+/dev-*/node_modules/
+/dev-*/build/

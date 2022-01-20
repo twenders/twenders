@@ -59,3 +59,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# tell jekyll to ignore the whole dev-notwordle/  dir
+exclude:
+  - node_modules
+  - dev-notwordle
+
