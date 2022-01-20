@@ -48,3 +48,12 @@ Here's a link to an outside site: [thetwender](http://thetwender.wordpress.com).
 Take a look at what's in the repository already for an idea of how it works.
 
 For more on markdown formatting, [see here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+
+## ReactJS app
+
+To build and deploy the ReactJS app at /notwordle/, run
+```
+npm run predeploy
+npm run deploy
+```
