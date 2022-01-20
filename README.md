@@ -54,6 +54,6 @@ For more on markdown formatting, [see here](https://github.com/adam-p/markdown-h
 
 To build and deploy the ReactJS app at /notwordle/, run
 ```
-npm run predeploy
+cd dev-notwordle 
 npm run deploy
 ```

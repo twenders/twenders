@@ -18,8 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "purge": "rm -rf ../notwordles/static && cp -fR ./build/* ../notwordles",
-    "frontmatter": "echo '---\ntitle: wot nordle\nlayout: null\n---\n' | cat - ../notwordles/index.html > temp && mv temp ../notwordles/index.html",
+    "purge": "rm -rf ../notwordle/static && cp -fR ./build/* ../notwordle",
+    "frontmatter": "echo '---\ntitle: wot nordle\nlayout: null\n---\n' | cat - ../notwordle/index.html > temp && mv temp ../notwordle/index.html",
     "deploy": "npm run purge && npm run frontmatter"
   },
   "eslintConfig": {
