@@ -60,8 +60,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# tell jekyll to ignore the whole dev-___ dir
+# tell jekyll to ignore all dev-___ dirs
 exclude:
   - node_modules
-  - dev-my-wordle
-
+  - dev-*

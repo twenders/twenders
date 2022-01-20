@@ -20,7 +20,7 @@ export const getWordOfDay = () => {
   const index = Math.floor((now - epochMs) / msInDay)
 
   return {
-    solution: WORDS[index].toUpperCase(),
+    solution: "KAJUB",// WORDS[index % WORDS.length].toUpperCase(),
     solutionIndex: index,
   }
 }

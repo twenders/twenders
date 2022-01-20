@@ -73,7 +73,7 @@ export const WinModal = ({
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    You did it!
+                    You did it! Happy day.
                   </Dialog.Title>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
