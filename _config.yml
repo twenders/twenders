@@ -25,6 +25,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: twenders
+# If you want to link only specific pages in your header, uncomment
+# header_pages and add the path to the pages in order as they should show up
+header_pages: 
+  - about.md
 
 # Build settings
 theme: minima

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kajuble/static/css/main.b7f5ec44.css",
+    "main.js": "/kajuble/static/js/main.72e1713a.js",
+    "static/js/787.17ef809c.chunk.js": "/kajuble/static/js/787.17ef809c.chunk.js",
+    "index.html": "/kajuble/index.html",
+    "main.b7f5ec44.css.map": "/kajuble/static/css/main.b7f5ec44.css.map",
+    "main.72e1713a.js.map": "/kajuble/static/js/main.72e1713a.js.map",
+    "787.17ef809c.chunk.js.map": "/kajuble/static/js/787.17ef809c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7f5ec44.css",
+    "static/js/main.72e1713a.js"
+  ]
+}
