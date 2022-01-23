@@ -1,7 +1,7 @@
 {
-  "name": "kajuble",
-  "homepage": "/kajuble/",
-  "version": "0.1.0",
+  "name": "cookle",
+  "homepage": "/cookle/",
+  "version": "0.1.29",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -26,8 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "purge": "rm -rf ../kajuble/static && cp -fR ./build/* ../kajuble",
-    "frontmatter": "echo '---\ntitle: wot nordle\nlayout: null\n---\n' | cat - ../kajuble/index.html > temp && mv temp ../kajuble/index.html",
+    "purge": "rm -rf ../cookle/static && cp -fR ./build/* ../cookle",
+    "frontmatter": "echo '---\ntitle: wot nordle\nlayout: null\n---\n' | cat - ../cookle/index.html > temp && mv temp ../cookle/index.html",
     "deploy": "npm run purge && npm run frontmatter"
   },
   "eslintConfig": {
