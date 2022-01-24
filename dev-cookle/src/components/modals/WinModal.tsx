@@ -9,6 +9,7 @@ type Props = {
   isOpen: boolean
   handleClose: () => void
   guesses: string[]
+  winningWord: string,
   handleShare: () => void
 }
 
@@ -16,6 +17,7 @@ export const WinModal = ({
   isOpen,
   handleClose,
   guesses,
+  winningWord,
   handleShare,
 }: Props) => {
   return (
@@ -69,16 +71,20 @@ export const WinModal = ({
                   />
                 </div>
                 <div className="mt-3 text-center sm:mt-5">
+
+                  <p className="text-sm text-gray-500">You did it!</p>
                   <Dialog.Title
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    You did it!
+                    {winningWord}
                   </Dialog.Title>
+                  <p className="text-sm text-gray-500">was the word for today.</p>
+                  <p className="text-sm text-gray-500">Tomorrow there'll be another.</p>
                   <div className="mt-2">
                     <MiniGrid guesses={guesses} />
-                    <p className="text-sm text-gray-500">Happy day.</p>
                   </div>
+                  <p className="text-sm text-gray-500">May your day be ever more potatoful.</p>
                 </div>
               </div>
               <div className="mt-5 sm:mt-6">

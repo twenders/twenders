@@ -33,14 +33,14 @@ export const Key = ({
       //   status === 'present',
     }
   )
-
+  let displayValue = (status === 'present')? "🍪" : ((status === 'correct')? "🥔" : value)
   return (
     <div
       style={{ width: `${width}px`, height: '40px' }}
       className={classes}
       onClick={() => onClick(value)}
     >
-      {children || value}
+      {children || displayValue}
     </div>
   )
 }

@@ -18,11 +18,10 @@ export const Cell = ({ value, status }: Props) => {
       // 'bg-yellow-500 text-white border-yellow-500': status === 'present',
     }
   )
-  value = (status === 'correct')? "🥔" : value
-  value = (status === 'present')? "🍪" : value
+  let displayValue = (status === 'present')? "🍪" : ((status === 'correct')? "🥔" : value)
   return (
     <>
-      <div className={classes}>{value}</div>
+      <div className={classes}>{displayValue}</div>
     </>
   )
 }

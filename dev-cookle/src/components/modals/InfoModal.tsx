@@ -62,50 +62,50 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      You know what do do... do I really have to explain?
+                      Pretty sure you know what do do...
                     </p><br/>
 
                     <p className="text-sm text-gray-500">
-                      Okay, if you insist.
+                      But just in case, here's an explanation.
                     </p><br/>
 
                     <p className="text-sm text-gray-500">
-                      Guess the word in 6 tries. After each guess, the color
-                      of the tiles will change to show how close your guess was
+                      Guess the word in 6 tries. After each guess,
+                      the tiles will change to show how close your guess was
                       to the word.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="K" status="correct" />
-                      <Cell value="A" />
-                      <Cell value="T" />
-                      <Cell value="I" />
-                      <Cell value="E" />
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      The letter K is in the word and in the correct spot.
-                    </p>
-
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="J" />
-                      <Cell value="O" />
-                      <Cell value="R" status="present" />
-                      <Cell value="M" />
-                      <Cell value="A" />
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      The letter R is in the word but in the wrong spot.
-                    </p>
-
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="L" />
-                      <Cell value="O" />
+                      <Cell value="Y" status="correct" />
                       <Cell value="U" />
-                      <Cell value="B" status="absent" />
+                      <Cell value="M" />
+                      <Cell value="M" />
                       <Cell value="Y" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter B is not in the word in any spot.
+                      The first letter is in the word and in the correct spot.
+                    </p>
+
+                    <div className="flex justify-center mb-1 mt-4">
+                      <Cell value="T" />
+                      <Cell value="A" />
+                      <Cell value="S" status="present" />
+                      <Cell value="T" />
+                      <Cell value="Y" />
+                    </div>
+                    <p className="text-sm text-gray-500">
+                      The third letter is in the word but in the wrong spot.
+                    </p>
+
+                    <div className="flex justify-center mb-1 mt-4">
+                      <Cell value="T" />
+                      <Cell value="R" />
+                      <Cell value="E" />
+                      <Cell value="A" status="absent" />
+                      <Cell value="T" />
+                    </div>
+                    <p className="text-sm text-gray-500">
+                      The letter A is not in the word in any spot.
                     </p>
                   </div>
                 </div>

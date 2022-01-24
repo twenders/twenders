@@ -17,9 +17,10 @@ export const MiniCell = ({ status }: Props) => {
     }
   )
 
+  let displayValue = (status === 'present')? "🍪" : ((status === 'correct')? "🥔" : '')
   return (
     <>
-      <div className={classes}></div>
+      <div className={classes}>{displayValue}</div>
     </>
   )
 }

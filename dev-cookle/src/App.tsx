@@ -130,6 +130,7 @@ function App() {
         isOpen={isWinModalOpen}
         handleClose={() => setIsWinModalOpen(false)}
         guesses={guesses}
+        winningWord={solution}
         handleShare={() => {
           setIsWinModalOpen(false)
           setShareComplete(true)
