@@ -5,64 +5,78 @@ a web archive of twenders, served live at [twenders.netlify.app](https://twender
 
 ## Adding a twender
 
-The site is structured as a blog using [jekyll](https://jekyllrb.com/).  Each twender has a post.
+The site is structured as a blog using [jekyll](https://jekyllrb.com/).  Each twender has a post, which is a markdown file.
 
-To add a twender, make a new folder in `_posts`. The folder can have any name.
+To add a twender:
 
-Within that folder, put a `.md` (or `.html`) file *which must be titled YYYY-MM-DD-[title]*, like `2020-05-10-bluebird.md`
+1. make a new folder in `_posts`. The folder can have any name, but use the convention of naming it starting with the date YYYY-MM-DD.
 
-This file should start with a YAML header between triple dashes like this, with some specific info about the twender:
+2. Within that folder, put a `.md` (or `.html`) file *which must be titled YYYY-MM-DD-[title]*, like `2020-05-10-bluebird.md`.  You can also put images you want to use, or other files involved into that folder, so you'll have something like this.
 
-```yaml
----
-layout: post
-title: bluebird
-published: true
-organizers: 
-  - Mima
-twendercrafters:
-  - Ian and Jasmine
-  - Aliza and John
-  - Zevi and Zoe
-  - Katie and Jacob (Tacko & Jebia)
-for: M&P 36th anniversary
-description: This puzzle was made as a way for Mama to deliver a surprise anniversary present to Papa.
----
-````
+  ```
+  _posts
+  └── 2016-07-03-bluebird
+      ├── 2020-05-10-bluebird.md
+      ├── done-kiss.jpg
+      ... etc
+  ```
 
-then, whatever markdown (or html) content you want, like
+  The `.md` file should start with a YAML header between triple dashes like this, with some specific info about the twender:
 
-```markdown
-This is a twender which led to a tandem bicycle!
+  ```yaml
+  ---
+  layout: post
+  title: bluebird
+  published: true
+  organizers: 
+    - M
+  twendercrafters:
+    - IH and JS
+    - AH and JL
+    - ZH and ZC
+    - KB and JH (Tacko & Jebia)
+  for: M&P 36th anniversary
+  description: This puzzle was made as a way for M to deliver a surprise anniversary present to P.
+  ---
+  ````
 
-Here's a link to an image in the same folder: [image title here](image.jpg).
+  then, whatever markdown (or html) content you want, like
 
-Here's an inline image: ![alt text](image.jpg)
+  ```markdown
+  This is a twender which led to a tandem bicycle!
 
-Here's an inline image with size specified:
-<a  href="done1.jpg"><img src="done1.jpg" width="200"/></a>
+  Here's a link to an image in the same folder: [image title here](image.jpg).
 
-Here's a link to an outside site: [thetwender](http://thetwender.wordpress.com).
-```
+  Here's an inline image: ![alt text](image.jpg)
 
-Take a look at what's in the repository already for an idea of how it works.
+  Here's an inline image with size specified:
+  <a  href="done1.jpg"><img src="done1.jpg" width="200"/></a>
+
+  Here's a link to an outside site: [thetwender](http://thetwender.wordpress.com).
+  ```
+
+Take a look at what's in the repository already for an idea of how it works.  _Note: any post with a date in the future will be ignored, so you can put drafts up like that.  You can also hide a post by setting `published: false` in the header._
 
 For more on markdown formatting, [see here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 
 ## ReactJS app
 
+Updating:
+
 Go into the dev folder for the app
-```
-cd dev-my-wordle
+```bash
+cd dev-${APPNAME}
 ```
 
-To test app, run
-```
+To test the app, run
+```bash
 npm run start
 ```
 
-To build and deploy the ReactJS app at /my-wordle/, run
-```
+To build and deploy the ReactJS app to `/${APPNAME}/` (see scripts defined in `dev-${APPNAME}/package.json`), run
+```bash
 npm run deploy
 ```
+
+Then just git add the updated app folder, commit, push.
