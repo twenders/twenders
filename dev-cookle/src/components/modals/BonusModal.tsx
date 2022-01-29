@@ -1,14 +1,16 @@
 import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { Cell } from '../grid/Cell'
-import { XCircleIcon } from '@heroicons/react/solid'
+import { CheckIcon, XCircleIcon, PuzzleIcon } from '@heroicons/react/solid'
 
 type Props = {
   isOpen: boolean
   handleClose: () => void
 }
 
-export const InfoModal = ({ isOpen, handleClose }: Props) => {
+export const BonusModal = ({
+  isOpen,
+  handleClose,
+}: Props) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog
@@ -28,7 +30,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           >
             <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
-
+          
           {/* This element is to trick the browser into centering the modal contents. */}
           <span
             className="hidden sm:inline-block sm:align-middle sm:h-screen"
@@ -53,61 +55,27 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                 />
               </div>
               <div>
-                <div className="text-center">
+                <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+                  <PuzzleIcon
+                    className="h-6 w-6 text-green-600"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="mt-3 text-center sm:mt-5">
                   <Dialog.Title
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    What to do
+                  Ooh. You clicked it.
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Pretty sure you know what do do...
-                    </p><br/>
-
-                    <p className="text-sm text-gray-500">
-                      But just in case, here's an explanation.
-                    </p><br/>
-
-                    <p className="text-sm text-gray-500">
-                      Guess the word in 6 tries. After each guess,
-                      the tiles will change to show how close your guess was
-                      to the word.
+                  <p className="text-sm text-gray-500">You get a bonus message.</p>
+                  <br/>
+                  <p className="text-sm text-green-700">
+                    Enough with this (for today).<br/>
+                    Check the board, and<br/>
+                    put your own potates in order.<br/>
+                    Hint: 🌹
                     </p>
-
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="Y" status="correct" />
-                      <Cell value="U" />
-                      <Cell value="M" />
-                      <Cell value="M" />
-                      <Cell value="Y" />
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      The first letter is in the word and in the correct spot.
-                    </p>
-
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="T" />
-                      <Cell value="A" />
-                      <Cell value="S" status="present" />
-                      <Cell value="T" />
-                      <Cell value="Y" />
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      The third letter is in the word but in the wrong spot.
-                    </p>
-
-                    <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="T" />
-                      <Cell value="R" />
-                      <Cell value="E" />
-                      <Cell value="A" status="absent" />
-                      <Cell value="T" />
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      The letter A is not in the word in any spot.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { XCircleIcon } from '@heroicons/react/outline'
+import { XCircleIcon } from '@heroicons/react/solid'
 
 type Props = {
   isOpen: boolean
@@ -61,23 +61,23 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      This obviously a clone of{' '}
+                      This little app is obviously a clone of{' '}
                       <a
                         href="https://www.powerlanguage.co.uk/wordle/"
                         className="underline font-bold"
                       >
-                        a certain game
+                        this game
                       </a>.
                     </p>
                     <p className="text-sm text-gray-500">
-                      Also, this clone was based on{' '}
+                      It is based on{' '}
                       <a
-                        href="https://github.com/hannahcode/wordle"
+                        href="https://wordle.hannahmariepark.com/"
                         className="underline font-bold"
                       >
                         this
                       </a>{' '}
-                      open source code by hannahcode.
+                      open source clone.
                     </p>
                   </div>
                 </div>

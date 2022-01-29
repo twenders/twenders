@@ -1,9 +1,8 @@
 import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { CheckIcon } from '@heroicons/react/outline'
+import { CheckIcon, XCircleIcon } from '@heroicons/react/solid'
 import { MiniGrid } from '../mini-grid/MiniGrid'
 import { shareStatus } from '../../lib/share'
-import { XCircleIcon } from '@heroicons/react/outline'
 
 type Props = {
   isOpen: boolean
@@ -72,19 +71,19 @@ export const WinModal = ({
                 </div>
                 <div className="mt-3 text-center sm:mt-5">
 
-                  <p className="text-sm text-gray-500">You did it!</p>
+                  {/*<p className="text-sm text-gray-500">You did it!</p>*/}
                   <Dialog.Title
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    {winningWord}
+                    Yay!
                   </Dialog.Title>
-                  <p className="text-sm text-gray-500">was the word for today.</p>
-                  <p className="text-sm text-gray-500">Tomorrow there'll be another.</p>
-                  <div className="mt-2">
+                  {/*<p className="text-sm text-gray-500">was the word for today.</p>*/}
+                  <div className="mt-2 sm:mt-6">
                     <MiniGrid guesses={guesses} />
                   </div>
-                  <p className="text-sm text-gray-500">May your day be ever more potatoful.</p>
+                  <p className="text-sm text-gray-500">Congratulations are in order!</p>
+                  <p className="text-sm text-gray-500">May your days be ever so potatoful.</p>
                 </div>
               </div>
               <div className="mt-5 sm:mt-6">

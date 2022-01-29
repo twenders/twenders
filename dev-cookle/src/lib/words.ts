@@ -13,8 +13,7 @@ export const isWinningWord = (word: string) => {
 }
 
 export const getWinningWord = () => {
-  // January 29, 2022 Cookatie Epoch
-  const epochMs = 1641013200000//1643432400000
+  const epochMs = new Date('January 1, 2022 00:00:00').valueOf() // 1643432400000
   const now = Date.now()
   const msInHour = 1000 * 60 * 60
   const msInDay = msInHour * 24
