@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { CheckIcon, XCircleIcon, PuzzleIcon } from '@heroicons/react/solid'
+import { XCircleIcon, PuzzleIcon } from '@heroicons/react/solid'
 
 type Props = {
   isOpen: boolean
