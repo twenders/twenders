@@ -28,7 +28,7 @@ export const WORDS = [
   'leapt',
   'amiss',
   'split',
-  'snowy',
+  'nival',
   'xylem',
   'yummy',
   'soare',
