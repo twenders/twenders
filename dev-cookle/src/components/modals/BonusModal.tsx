@@ -70,14 +70,16 @@ export const BonusModal = ({
                   </Dialog.Title>
                   <p className="text-sm text-gray-500">You get a bonus message.</p>
                   <br/>
-                  <p className="text-sm text-green-700">
-                    Enough with this (for today).<br/>
+                  <p className="text text-green-700">
+                    Okay, enough with this (for today).<br/>
+                    Step 2. Order your taters* now.
                   </p>
-                  <p className="text-sm text-green-700">
-                    Time for step 2.<br/>
-                    Order your taters.<br/>
-                    Hint: 🌹
-                    </p>
+                  <p className="text text-gray-300">
+                  <details><summary>Hint</summary>🌹</details>
+                  </p>
+                  <p className="text-xs my-8 text-gray-500">
+                    *Generously provided by Chez Sponge<br/> and etched by Z&Z Potato Limners, Ltd.                   
+                  </p>
                 </div>
               </div>
             </div>

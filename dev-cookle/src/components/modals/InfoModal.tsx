@@ -62,17 +62,16 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Pretty sure you know what do do...
-                    </p><br/>
-
-                    <p className="text-sm text-gray-500">
+                      Pretty sure you know what do do...<br/>
                       But just in case, here's an explanation.
                     </p><br/>
-
                     <p className="text-sm text-gray-500">
-                      Guess the word in 6 tries. After each guess,
-                      the tiles will change to show how close your guess was
-                      to the word.
+                      You have 6 tries to gues the word. After each guess
+                      the tiles will change to tell you how close you were.
+                    </p><br/>
+                    <p className="text-sm italic text-gray-500">  
+                      ⚠️ Note: correct letters will be hidden behind morsels, 
+                      so be sure to remember what you guessed!
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
