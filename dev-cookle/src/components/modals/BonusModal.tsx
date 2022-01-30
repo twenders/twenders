@@ -72,8 +72,10 @@ export const BonusModal = ({
                   <br/>
                   <p className="text-sm text-green-700">
                     Enough with this (for today).<br/>
-                    Check the board, and<br/>
-                    put your own potates in order.<br/>
+                  </p>
+                  <p className="text-sm text-green-700">
+                    Time for step 2.<br/>
+                    Order your taters.<br/>
                     Hint: 🌹
                     </p>
                 </div>
