@@ -8523,6 +8523,7 @@ export const VALIDGUESSES = [
   'snots',
   'snowk',
   'snows',
+  'snowy',
   'snubs',
   'snugs',
   'snush',
