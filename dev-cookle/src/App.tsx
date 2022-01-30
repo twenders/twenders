@@ -41,7 +41,7 @@ function App() {
     }
     return loaded.guesses
   })
-  const specialSolution = "SNOWY"
+  const specialSolution = "NIVAL"
   const [stats, setStats] = useState(() => loadStats())
 
   useEffect(() => {
