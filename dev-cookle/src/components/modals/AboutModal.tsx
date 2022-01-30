@@ -61,16 +61,16 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      This little app is obviously a clone of{' '}
+                      This game is obviously a copy of{' '}
                       <a
                         href="https://www.powerlanguage.co.uk/wordle/"
                         className="underline font-bold"
                       >
-                        this game
+                        wordle
                       </a>.
                     </p>
                     <p className="text-sm text-gray-500">
-                      It is based on{' '}
+                      This little app was made using{' '}
                       <a
                         href="https://wordle.hannahmariepark.com/"
                         className="underline font-bold"
