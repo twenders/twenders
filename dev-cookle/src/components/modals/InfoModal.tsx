@@ -66,7 +66,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       But just in case, here's an explanation.
                     </p><br/>
                     <p className="text-sm text-gray-500">
-                      You have 6 tries to gues the word. After each guess
+                      You have 6 tries to guess the word. After each guess
                       the tiles will change to tell you how close you were.
                     </p><br/>
                     <p className="text-sm italic text-gray-500">  
