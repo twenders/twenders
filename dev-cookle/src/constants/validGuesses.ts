@@ -6868,6 +6868,7 @@ export const VALIDGUESSES = [
   'piste',
   'pitas',
   'piths',
+  'pithy',
   'piton',
   'pitot',
   'pitta',
