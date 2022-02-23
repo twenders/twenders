@@ -60,6 +60,8 @@ export const WORDS = [
   'suave',
   'gamut',
   'butts',
+  'bagel',//March 4
+  'melty',
   'llama',
   'qualm',
   'swoon',
@@ -1084,7 +1086,6 @@ export const WORDS = [
   'suite',
   'itchy',
   'cheer',
-  'bagel',
   'guess',
   'broad',
   'axiom',
