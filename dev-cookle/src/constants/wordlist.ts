@@ -60,12 +60,12 @@ export const WORDS = [
   'terse',
   'suave',
   'gamut',
-  'bagel',//March 4
+  'bagel',
   'melty',
   'butts',
   'llama',
   'qualm',
-  'swoon',
+  'swoon',//March 8
   'jumbo',
   'azure',
   'sheep',
