@@ -80,3 +80,13 @@ npm run deploy
 ```
 
 Then just git add the updated app folder, commit, push.
+
+For the `cookle` app, for instance, to update the wordlist:
+
+1. edit wordlist in `dev-cookle/src/constants/wordlist.ts`
+2. in dev-cookle directory, run
+
+  ```bash
+  npm run deploy && cd .. && git add cookle dev-cookle && git comm
+  it -m 'routine wordlist update' && git push
+  ```
