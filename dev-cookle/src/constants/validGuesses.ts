@@ -1780,6 +1780,7 @@ export const VALIDGUESSES = [
   'comby',
   'comer',
   'comes',
+  'comfy',
   'comix',
   'commo',
   'comms',
