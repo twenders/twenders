@@ -167,8 +167,7 @@ export const WORDS = [
   'media',
   'trunk',
   'yeast',
-  'clear',
-  'hiker',
+  'hiker', // June 18
   'skunk',
   'scalp',
   'bitty',
