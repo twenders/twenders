@@ -168,6 +168,7 @@ export const WORDS = [
   'trunk',
   'yeast',
   'clear',
+  'hiker',
   'skunk',
   'scalp',
   'bitty',

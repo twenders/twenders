@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cookle/static/css/main.28620165.css",
-    "main.js": "/cookle/static/js/main.fb64c7fc.js",
+    "main.js": "/cookle/static/js/main.d99d4fad.js",
     "static/js/787.3790bbd5.chunk.js": "/cookle/static/js/787.3790bbd5.chunk.js",
     "index.html": "/cookle/index.html",
     "main.28620165.css.map": "/cookle/static/css/main.28620165.css.map",
-    "main.fb64c7fc.js.map": "/cookle/static/js/main.fb64c7fc.js.map",
+    "main.d99d4fad.js.map": "/cookle/static/js/main.d99d4fad.js.map",
     "787.3790bbd5.chunk.js.map": "/cookle/static/js/787.3790bbd5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28620165.css",
-    "static/js/main.fb64c7fc.js"
+    "static/js/main.d99d4fad.js"
   ]
 }
