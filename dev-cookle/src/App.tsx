@@ -14,6 +14,7 @@ import { WinModal } from './components/modals/WinModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { isWordInWordList, isWinningWord, solution } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
+import { ISPOODLE } from './constants/isPoodle'
 import {
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
@@ -115,7 +116,7 @@ function App() {
       />
       <div className="flex w-80 mx-auto items-center mb-8">
         <h1 className="text-xl grow mx-1 font-bold">
-          {isGameWon? "cookle!": "cookle"}
+          {isGameWon? "cookle!":  (ISPOODLE? "poodle" : "cookle")}
         </h1>
         {isGameWon && !isWinModalOpen && solution === specialSolution?
           <button
