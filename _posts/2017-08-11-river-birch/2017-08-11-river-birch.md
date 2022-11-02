@@ -18,7 +18,7 @@ Clues arrived on river birch bark (collected from Tennessee, I think)
 
 
 <details>
-  <summary>led to</summary>
-  <p>the phrase <emph>the lesson of the moth</emph>, which is a title of <a href="http://www.donmarquis.org/themoth.htm">a poem</a> by Don Marquis.</p>
-  <p>Which may or may not be the end goal.</p>
+  <summary>This led to</summary>
+  <p>the phrase _the lesson of the moth_, which is a title of [a poem](http://www.donmarquis.org/themoth.htm) by Don Marquis,</p>
+  <p>which may or may not be the end goal.</p>
 </details>
