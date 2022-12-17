@@ -5,16 +5,17 @@ import { EmptyRow } from './EmptyRow'
 type Props = {
   guesses: string[]
   currentGuess: string
+  isPoodle?: Boolean
 }
 
-export const Grid = ({ guesses, currentGuess }: Props) => {
+export const Grid = ({ guesses, currentGuess, isPoodle = false }: Props) => {
   const empties =
     guesses.length < 5 ? Array.from(Array(5 - guesses.length)) : []
 
   return (
     <div className="pb-6">
       {guesses.map((guess, i) => (
-        <CompletedRow key={i} guess={guess} />
+        <CompletedRow key={i} guess={guess} isPoodle={isPoodle} />
       ))}
       {guesses.length < 6 && <CurrentRow guess={currentGuess} />}
       {empties.map((_, i) => (

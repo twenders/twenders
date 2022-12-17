@@ -1,6 +1,7 @@
 import { 
-  InformationCircleIcon, 
-  QuestionMarkCircleIcon, 
+  InformationCircleIcon,
+  QuestionMarkCircleIcon,
+  CogIcon,
   ChartBarIcon//, PuzzleIcon
 } from '@heroicons/react/solid'
 import { useState, useEffect } from 'react'
@@ -12,13 +13,19 @@ import { InfoModal } from './components/modals/InfoModal'
 import { BonusModal } from './components/modals/BonusModal'
 import { WinModal } from './components/modals/WinModal'
 import { StatsModal } from './components/modals/StatsModal'
+import { SettingsModal } from './components/modals/SettingsModal'
 import { isWordInWordList, isWinningWord, solution } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
-import { ISPOODLE } from './constants/isPoodle'
+
+import Toggle from './components/modals/Toggle'
+
 import {
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
+  loadPrefsFromLocalStorage,
+  savePrefsToLocalStorage
 } from './lib/localStorage'
+
 
 function App() {
   const [currentGuess, setCurrentGuess] = useState('')
@@ -28,10 +35,12 @@ function App() {
   const [isBonusModalOpen, setIsBonusModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isWordNotFoundAlertOpen, setIsWordNotFoundAlertOpen] = useState(false)
   const [isGameLost, setIsGameLost] = useState(false)
   const [shareComplete, setShareComplete] = useState(false)
+  
   const [guesses, setGuesses] = useState<string[]>(() => {
     const loaded = loadGameStateFromLocalStorage()
     if (loaded?.solution !== solution) {
@@ -42,8 +51,28 @@ function App() {
     }
     return loaded.guesses
   })
+
+
+  const [isPoodle, setIsPoodle] = useState(() => {
+    const loaded = loadPrefsFromLocalStorage()
+    if (loaded?.isPoodlePref == null) {
+      return false
+    }
+    return loaded.isPoodlePref
+  })
+
+  const togglePoodle = <Toggle
+    enabled={isPoodle}
+    setEnabled={setIsPoodle}
+    label="Switch to 'poodle' (hard mode)"
+    ></Toggle>
+
   const specialSolution = "NIVAL"
   const [stats, setStats] = useState(() => loadStats())
+
+  useEffect(() => {
+    savePrefsToLocalStorage({isPoodlePref : isPoodle})
+  }, [isPoodle])
 
   useEffect(() => {
     saveGameStateToLocalStorage({ guesses, solution })
@@ -116,7 +145,7 @@ function App() {
       />
       <div className="flex w-80 mx-auto items-center mb-8">
         <h1 className="text-xl grow mx-1 font-bold">
-          {isGameWon? "cookle!":  (ISPOODLE? "poodle" : "cookle")}
+          {isGameWon? "cookle!":  (isPoodle? "poodle" : "cookle")}
         </h1>
         {isGameWon && !isWinModalOpen && solution === specialSolution?
           <button
@@ -125,6 +154,10 @@ function App() {
             onClick={() => setIsBonusModalOpen(true)}>
             I'm a mysterious button. 
           </button> : null}
+        <CogIcon
+          className="h-6 w-6 mx-1 cursor-pointer"
+          onClick={() => setIsSettingsModalOpen(true)}
+        />
         <QuestionMarkCircleIcon
           className="h-6 w-6 mx-1 cursor-pointer"
           onClick={() => setIsInfoModalOpen(true)}
@@ -134,12 +167,13 @@ function App() {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
-      <Grid guesses={guesses} currentGuess={currentGuess} />
+      <Grid guesses={guesses} currentGuess={currentGuess} isPoodle={isPoodle} />
       <Keyboard
         onChar={onChar}
         onDelete={onDelete}
         onEnter={onEnter}
         guesses={guesses}
+        isPoodle={isPoodle}
       />
       <WinModal
         isOpen={isWinModalOpen}
@@ -161,6 +195,11 @@ function App() {
       <InfoModal
         isOpen={isInfoModalOpen}
         handleClose={() => setIsInfoModalOpen(false)}
+      />
+      <SettingsModal
+        isOpen={isSettingsModalOpen}
+        handleClose={() => setIsSettingsModalOpen(false)}
+        content={togglePoodle}
       />
       <StatsModal
         isOpen={isStatsModalOpen}

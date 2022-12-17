@@ -8,9 +8,10 @@ type Props = {
   onDelete: () => void
   onEnter: () => void
   guesses: string[]
+  isPoodle?: Boolean
 }
 
-export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
+export const Keyboard = ({ onChar, onDelete, onEnter, guesses, isPoodle = false }: Props) => {
   const charStatuses = getStatuses(guesses)
 
   const onClick = (value: KeyValue) => {
@@ -45,39 +46,39 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
   return (
     <div>
       <div className="flex justify-center mb-1">
-        <Key value="Q" onClick={onClick} status={charStatuses['Q']} />
-        <Key value="W" onClick={onClick} status={charStatuses['W']} />
-        <Key value="E" onClick={onClick} status={charStatuses['E']} />
-        <Key value="R" onClick={onClick} status={charStatuses['R']} />
-        <Key value="T" onClick={onClick} status={charStatuses['T']} />
-        <Key value="Y" onClick={onClick} status={charStatuses['Y']} />
-        <Key value="U" onClick={onClick} status={charStatuses['U']} />
-        <Key value="I" onClick={onClick} status={charStatuses['I']} />
-        <Key value="O" onClick={onClick} status={charStatuses['O']} />
-        <Key value="P" onClick={onClick} status={charStatuses['P']} />
+        <Key value="Q" onClick={onClick} status={charStatuses['Q']} isPoodle={isPoodle} />
+        <Key value="W" onClick={onClick} status={charStatuses['W']} isPoodle={isPoodle} />
+        <Key value="E" onClick={onClick} status={charStatuses['E']} isPoodle={isPoodle} />
+        <Key value="R" onClick={onClick} status={charStatuses['R']} isPoodle={isPoodle} />
+        <Key value="T" onClick={onClick} status={charStatuses['T']} isPoodle={isPoodle} />
+        <Key value="Y" onClick={onClick} status={charStatuses['Y']} isPoodle={isPoodle} />
+        <Key value="U" onClick={onClick} status={charStatuses['U']} isPoodle={isPoodle} />
+        <Key value="I" onClick={onClick} status={charStatuses['I']} isPoodle={isPoodle} />
+        <Key value="O" onClick={onClick} status={charStatuses['O']} isPoodle={isPoodle} />
+        <Key value="P" onClick={onClick} status={charStatuses['P']} isPoodle={isPoodle} />
       </div>
       <div className="flex justify-center mb-1">
-        <Key value="A" onClick={onClick} status={charStatuses['A']} />
-        <Key value="S" onClick={onClick} status={charStatuses['S']} />
-        <Key value="D" onClick={onClick} status={charStatuses['D']} />
-        <Key value="F" onClick={onClick} status={charStatuses['F']} />
-        <Key value="G" onClick={onClick} status={charStatuses['G']} />
-        <Key value="H" onClick={onClick} status={charStatuses['H']} />
-        <Key value="J" onClick={onClick} status={charStatuses['J']} />
-        <Key value="K" onClick={onClick} status={charStatuses['K']} />
-        <Key value="L" onClick={onClick} status={charStatuses['L']} />
+        <Key value="A" onClick={onClick} status={charStatuses['A']} isPoodle={isPoodle} />
+        <Key value="S" onClick={onClick} status={charStatuses['S']} isPoodle={isPoodle} />
+        <Key value="D" onClick={onClick} status={charStatuses['D']} isPoodle={isPoodle} />
+        <Key value="F" onClick={onClick} status={charStatuses['F']} isPoodle={isPoodle} />
+        <Key value="G" onClick={onClick} status={charStatuses['G']} isPoodle={isPoodle} />
+        <Key value="H" onClick={onClick} status={charStatuses['H']} isPoodle={isPoodle} />
+        <Key value="J" onClick={onClick} status={charStatuses['J']} isPoodle={isPoodle} />
+        <Key value="K" onClick={onClick} status={charStatuses['K']} isPoodle={isPoodle} />
+        <Key value="L" onClick={onClick} status={charStatuses['L']} isPoodle={isPoodle} />
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
           😋
         </Key>
-        <Key value="Z" onClick={onClick} status={charStatuses['Z']} />
-        <Key value="X" onClick={onClick} status={charStatuses['X']} />
-        <Key value="C" onClick={onClick} status={charStatuses['C']} />
-        <Key value="V" onClick={onClick} status={charStatuses['V']} />
-        <Key value="B" onClick={onClick} status={charStatuses['B']} />
-        <Key value="N" onClick={onClick} status={charStatuses['N']} />
-        <Key value="M" onClick={onClick} status={charStatuses['M']} />
+        <Key value="Z" onClick={onClick} status={charStatuses['Z']} isPoodle={isPoodle} />
+        <Key value="X" onClick={onClick} status={charStatuses['X']} isPoodle={isPoodle} />
+        <Key value="C" onClick={onClick} status={charStatuses['C']} isPoodle={isPoodle} />
+        <Key value="V" onClick={onClick} status={charStatuses['V']} isPoodle={isPoodle} />
+        <Key value="B" onClick={onClick} status={charStatuses['B']} isPoodle={isPoodle} />
+        <Key value="N" onClick={onClick} status={charStatuses['N']} isPoodle={isPoodle} />
+        <Key value="M" onClick={onClick} status={charStatuses['M']} isPoodle={isPoodle} />
         <Key width={65.4} value="DELETE" onClick={onClick}>
           🤢
         </Key>

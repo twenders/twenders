@@ -2,12 +2,12 @@ import { ReactNode } from 'react'
 import classnames from 'classnames'
 import { KeyValue } from '../../lib/keyboard'
 import { CharStatus } from '../../lib/statuses'
-import { ISPOODLE } from '../../constants/isPoodle'
 
 type Props = {
   children?: ReactNode
   value: KeyValue
   width?: number
+  isPoodle?: Boolean
   status?: CharStatus
   onClick: (value: KeyValue) => void
 }
@@ -16,6 +16,7 @@ export const Key = ({
   children,
   status,
   width = 40,
+  isPoodle = false,
   value,
   onClick,
 }: Props) => {
@@ -34,7 +35,7 @@ export const Key = ({
       //   status === 'present',
     }
   )
-  let absentValue = ISPOODLE ? "💩" : value
+  let absentValue = isPoodle ? "💩" : value
   let displayValue = (status === 'present')? "🍪" : (
     (status === 'correct')? "🥔" : (status === 'absent')? absentValue : value
   )

@@ -1,13 +1,14 @@
 import { CharStatus } from '../../lib/statuses'
 import classnames from 'classnames'
-import { ISPOODLE } from '../../constants/isPoodle'
+// import { ISPOODLE } from '../../constants/isPoodle'
 
 type Props = {
   value?: string
   status?: CharStatus
+  isPoodle?: Boolean
 }
 
-export const Cell = ({ value, status }: Props) => {
+export const Cell = ({ value, status, isPoodle = false }: Props) => {
   const classes = classnames(
     'w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-xl font-bold',
     {
@@ -19,7 +20,7 @@ export const Cell = ({ value, status }: Props) => {
       // 'bg-yellow-500 text-white border-yellow-500': status === 'present',
     }
   )
-  let absentValue = ISPOODLE ? "💩" : value
+  let absentValue = isPoodle ? "💩" : value
   let displayValue = (status === 'present')? "🍪" : (
     (status === 'correct')? "🥔" : (status === 'absent')? absentValue : value
   )

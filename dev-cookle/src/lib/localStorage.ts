@@ -33,3 +33,19 @@ export const loadStatsFromLocalStorage = () => {
   const stats = localStorage.getItem(gameStatKey)
   return stats ? (JSON.parse(stats) as GameStats) : null
 }
+
+
+const gamePrefKey = 'gamePrefs'
+
+export type GamePrefs = {
+  isPoodlePref: boolean
+}
+
+export const savePrefsToLocalStorage = (gamePrefs: GamePrefs) => {
+  localStorage.setItem(gamePrefKey, JSON.stringify(gamePrefs))
+}
+
+export const loadPrefsFromLocalStorage = () => {
+  const Prefs = localStorage.getItem(gameStatKey)
+  return Prefs ? (JSON.parse(Prefs) as GamePrefs) : null
+}
