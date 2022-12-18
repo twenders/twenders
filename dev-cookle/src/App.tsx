@@ -11,6 +11,7 @@ import { Keyboard } from './components/keyboard/Keyboard'
 import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { BonusModal } from './components/modals/BonusModal'
+import { KajubidayModal } from './components/modals/KajubidayModal'
 import { WinModal } from './components/modals/WinModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { SettingsModal } from './components/modals/SettingsModal'
@@ -33,6 +34,7 @@ function App() {
   const [isWinModalOpen, setIsWinModalOpen] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isBonusModalOpen, setIsBonusModalOpen] = useState(false)
+  const [isKajubidayModalOpen, setIsKajubidayModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
@@ -56,8 +58,10 @@ function App() {
   const [isPoodle, setIsPoodle] = useState(() => {
     const loaded = loadPrefsFromLocalStorage()
     if (loaded?.isPoodlePref == null) {
+      console.log(`set isPoodle=false by default`)
       return false
     }
+    // console.log(`set isPoodle=${loaded.isPoodlePref} from local`)
     return loaded.isPoodlePref
   })
 
@@ -68,10 +72,12 @@ function App() {
     ></Toggle>
 
   const specialSolution = "NIVAL"
+  const KajubidaySolution = "TATER"
   const [stats, setStats] = useState(() => loadStats())
 
   useEffect(() => {
-    savePrefsToLocalStorage({isPoodlePref : isPoodle})
+    // console.log(`Saved ${isPoodle} to local`)
+    savePrefsToLocalStorage({isPoodlePref: isPoodle})
   }, [isPoodle])
 
   useEffect(() => {
@@ -147,13 +153,22 @@ function App() {
         <h1 className="text-xl grow mx-1 font-bold">
           {isGameWon? "cookle!":  (isPoodle? "poodle" : "cookle")}
         </h1>
-        {isGameWon && !isWinModalOpen && solution === specialSolution?
+        {isGameWon && solution === specialSolution?
           <button
             type="button"
             className="flex mx-3 items-center px-1.5 py-1 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             onClick={() => setIsBonusModalOpen(true)}>
-            I'm a mysterious button. 
-          </button> : null}
+            mysterious button
+          </button> : null
+        }
+        {isGameWon && solution === KajubidaySolution?
+          <button
+            type="button"
+            className="flex mx-3 items-center px-1.5 py-1 border border-transparent text-xs font-medium rounded text-red-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onClick={() => setIsKajubidayModalOpen(true)}>
+            mysterious button
+          </button> : null
+        }
         <CogIcon
           className="h-6 w-6 mx-1 cursor-pointer"
           onClick={() => setIsSettingsModalOpen(true)}
@@ -191,6 +206,10 @@ function App() {
       <BonusModal
         isOpen={isBonusModalOpen}
         handleClose={() => setIsBonusModalOpen(false)}
+      />
+      <KajubidayModal
+        isOpen={isKajubidayModalOpen}
+        handleClose={() => setIsKajubidayModalOpen(false)}
       />
       <InfoModal
         isOpen={isInfoModalOpen}
