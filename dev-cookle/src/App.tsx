@@ -2,7 +2,8 @@ import {
   InformationCircleIcon,
   QuestionMarkCircleIcon,
   CogIcon,
-  ChartBarIcon//, PuzzleIcon
+  ChartBarIcon,//, PuzzleIcon, CakeIcon,
+  GiftIcon
 } from '@heroicons/react/solid'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
@@ -12,6 +13,7 @@ import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { BonusModal } from './components/modals/BonusModal'
 import { KajubidayModal } from './components/modals/KajubidayModal'
+import { SantaModal } from './components/modals/SantaModal'
 import { WinModal } from './components/modals/WinModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { SettingsModal } from './components/modals/SettingsModal'
@@ -35,6 +37,7 @@ function App() {
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isBonusModalOpen, setIsBonusModalOpen] = useState(false)
   const [isKajubidayModalOpen, setIsKajubidayModalOpen] = useState(false)
+  const [isSantaModalOpen, setIsSantaModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
@@ -73,6 +76,7 @@ function App() {
 
   const specialSolution = "NIVAL"
   const KajubidaySolution = "TATER"
+  const SantaSolution = "SANTA"
   const [stats, setStats] = useState(() => loadStats())
 
   useEffect(() => {
@@ -169,6 +173,12 @@ function App() {
             mysterious button
           </button> : null
         }
+        {isGameWon && solution === SantaSolution?
+          <GiftIcon
+            className="h-6 w-6 mx-1 cursor-pointer text-red-800 rounded bg-green-300 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onClick={() => setIsSantaModalOpen(true)} 
+          /> : null
+        }
         <CogIcon
           className="h-6 w-6 mx-1 cursor-pointer"
           onClick={() => setIsSettingsModalOpen(true)}
@@ -210,6 +220,10 @@ function App() {
       <KajubidayModal
         isOpen={isKajubidayModalOpen}
         handleClose={() => setIsKajubidayModalOpen(false)}
+      />
+      <SantaModal
+        isOpen={isSantaModalOpen}
+        handleClose={() => setIsSantaModalOpen(false)}
       />
       <InfoModal
         isOpen={isInfoModalOpen}

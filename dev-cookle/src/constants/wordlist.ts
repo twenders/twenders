@@ -354,10 +354,10 @@ export const WORDS = [
   'aroma',
   'lasts',
   'chant',
-  'shake',
-  'dodge',
-  'swill',//2022-12-24
-  'tacit',//25
+  'santa',//2022 Thu Dec 22nd
+  'swill',
+  'feast',//2022-12-24
+  'merry',//25
   'extra',
   'other',
   'thorn',
@@ -887,7 +887,7 @@ export const WORDS = [
   'bugle',
   'tawny',
   'chalk',
-  'feast',
+  'dodge',
   'ruddy',
   'pedal',
   'scarf',
@@ -895,7 +895,6 @@ export const WORDS = [
   'bleat',
   'tidal',
   'slush',
-  'semen',
   'windy',
   'dusty',
   'sally',
@@ -1327,7 +1326,7 @@ export const WORDS = [
   'juice',
   'nylon',
   'plump',
-  'merry',
+  'tacit',
   'flail',
   'papal',
   'wheat',

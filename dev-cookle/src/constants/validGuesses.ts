@@ -7905,6 +7905,7 @@ export const VALIDGUESSES = [
   'sangs',
   'sanko',
   'sansa',
+  'santa',
   'santo',
   'sants',
   'saola',

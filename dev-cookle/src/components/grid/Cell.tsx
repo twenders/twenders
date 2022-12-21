@@ -10,7 +10,7 @@ type Props = {
 
 export const Cell = ({ value, status, isPoodle = false }: Props) => {
   const classes = classnames(
-    'w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-xl font-bold',
+    'w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-2xl font-bold',
     {
       'bg-white border-gray-200': !status,
       'bg-gray-400 text-white border-gray-400': status === 'absent',
@@ -21,7 +21,7 @@ export const Cell = ({ value, status, isPoodle = false }: Props) => {
     }
   )
   let absentValue = isPoodle ? "💩" : value
-  let displayValue = (status === 'present')? "🍪" : (
+  let displayValue = (status === 'present')? "🥠" : (//🍪
     (status === 'correct')? "🥔" : (status === 'absent')? absentValue : value
   )
   return (

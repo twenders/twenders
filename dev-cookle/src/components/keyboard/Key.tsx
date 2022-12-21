@@ -36,7 +36,7 @@ export const Key = ({
     }
   )
   let absentValue = isPoodle ? "💩" : value
-  let displayValue = (status === 'present')? "🍪" : (
+  let displayValue = (status === 'present')? "🥠" : ( //🍪
     (status === 'correct')? "🥔" : (status === 'absent')? absentValue : value
   )
   return (
