@@ -392,7 +392,7 @@ export const WORDS = [
   'renew',
   'their',
   'slosh',
-  'tater',
+  'tater',//2023-01-29
   'purge',
   'chest',
   'depot',
@@ -497,6 +497,7 @@ export const WORDS = [
   'hutch',
   'pinto',
   'gaily',
+  'quail',//2023-05-14
   'egret',
   'lilac',
   'sever',
@@ -1423,7 +1424,6 @@ export const WORDS = [
   'flung',
   'yacht',
   'fried',
-  'quail',
   'brunt',
   'grimy',
   'curvy',
