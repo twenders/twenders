@@ -8149,6 +8149,7 @@ export const VALIDGUESSES = [
   'shads',
   'shags',
   'shahs',
+  'shake',
   'shako',
   'shakt',
   'shalm',

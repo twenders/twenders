@@ -7,6 +7,8 @@ type Props = {
   handleClose: () => void
 }
 
+const public_url = process.env.PUBLIC_URL + '/'
+
 export const KajubidayModal = ({
   isOpen,
   handleClose,
@@ -66,13 +68,16 @@ export const KajubidayModal = ({
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                  Happy Katie day to one and all
+                  Happy potato day to one and all
                   </Dialog.Title>
-                  <p className="text-sm text-gray-500">(and a year so far of cookle)</p>
+                  <p className="text-sm text-gray-500">(and year so far of cookle)</p>
                   <br/>
                   <p className="text text-gray-500">
-                    All those potatoes... <br/>
-                    Here's to so many more.
+                    🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔<br/>
+                    🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔<br/>
+                    🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔 🥔 <span className='drop-shadow-lg shadow-black outline outline-2 rounded-2xl outline-offset-2'>🥔</span><br/>
+                    Here's to so many more.<br/><br/>
+                    <img src={public_url + 'labelled-potatoes.jpg'} className="" alt={public_url + 'labelled-potatoes.jpg'}/>
                   </p>
                 </div>
               </div>

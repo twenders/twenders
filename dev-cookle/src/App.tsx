@@ -168,9 +168,9 @@ function App() {
         {isGameWon && solution === KajubidaySolution?
           <button
             type="button"
-            className="flex mx-3 items-center px-1.5 py-1 border border-transparent text-xs font-medium rounded text-red-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="flex mx-12 items-center text-2xl rounded bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             onClick={() => setIsKajubidayModalOpen(true)}>
-            mysterious button
+            &nbsp;🥳&nbsp;
           </button> : null
         }
         {isGameWon && solution === SantaSolution?
