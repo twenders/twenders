@@ -31,7 +31,7 @@ Password protected pages:
   <details><summary>Solution</summary>
     Password <code>About Us</code>.
     Leads to Aliza and John's puzzle, <a href="https://docs.google.com/spreadsheets/d/1Wqk3sNVY8RTRLGo3k5S2_m-68sf6sTZoeYYF_a1ww3g/edit">Bagel Journey</a> a text-based adventure game implemented in Google Sheets. 
-    <img width="629" alt="Screenshot 2023-07-08 at 08 41 52" src="https://github.com/twenders/twenders/assets/65197892/995d2b90-8d7e-4425-94d2-4d5358e0f034">
+    <a href="https://docs.google.com/spreadsheets/d/1Wqk3sNVY8RTRLGo3k5S2_m-68sf6sTZoeYYF_a1ww3g/edit"><img width="629" alt="Screenshot 2023-07-08 at 08 41 52" src="https://github.com/twenders/twenders/assets/65197892/995d2b90-8d7e-4425-94d2-4d5358e0f034"></a>
   </details>
 - [**Mission Statement**](https://thetwender.wordpress.com/mission-statement/)
   <details><summary>Solution</summary>
