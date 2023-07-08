@@ -38,8 +38,9 @@ Password preotected pages:
     Leads to Ian and Jasmine's puzzle, a page of Lorem Ipsum where individual letters colored slightly differently. Decoding the hex codes of each color in ascii, thinking of each hex code as three two-digit groups, resulted in the password. Includes snarky Easter Egg if you look at the source code.
   </details>
 - **Apply**
-  Password <code>Apply yourself</code>.
-    Leads to Zoe's two stanza limerick, where a majority of letters were scrambled and color coded. The top of the page indicates a key, where you use the previous three passwords to determine the color coding system. The bolded word at the end is the password for the final page.
+   <details><summary>Solution</summary>
+    Password <code>Apply yourself</code>.
+    Leads to Zoe's two-stanza limerick, where a majority of letters were scrambled and color coded. The top of the page indicates a key, where you use the previous three passwords to determine the color coding system of shifting letters left/right/up/down on the keyboard. The bolded word at the end is the password for the final page.
   </details>
 - **Links**
  <details><summary>Solution</summary>
