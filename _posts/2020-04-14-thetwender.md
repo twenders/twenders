@@ -26,7 +26,7 @@ Puzzle begins at The Beginnings, and the passwords begin to become clear!
     Begins with Jacob and Katie's puzzle, a three-page letter/story related to noses and bagels as written by a dog. Images of Zev have text overlaid with letters missing. The text also leads to the Quotations page, in which the quotes related to bagels or noses provide letters to the password.
   </details>
   
-Password preotected pages:
+Password protected pages:
 - **About Us**:
   <details><summary>Solution</summary>
     Password <code>About Us</code>.
