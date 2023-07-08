@@ -40,6 +40,7 @@ Password preotected pages:
 - **Apply**
   Password <code>Apply yourself</code>.
     Leads to Zoe's two stanza limerick, where a majority of letters were scrambled and color coded. The top of the page indicates a key, where you use the previous three passwords to determine the color coding system. The bolded word at the end is the password for the final page.
+  </details>
 - **Links**
  <details><summary>Solution</summary>
     Password <code>BHooveZ</code>.
