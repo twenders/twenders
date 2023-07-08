@@ -41,19 +41,19 @@ Password protected pages:
 - [**Apply**](https://thetwender.wordpress.com/apply/)
    <details><summary>Solution</summary>
     Password <code>Apply yourself</code>.
-    Leads to Zoe's two-stanza limerick, where a majority of letters were scrambled and color coded. The top of the page indicates a key, where you use the previous three passwords to determine the color coding system of shifting letters left/right/up/down on the keyboard. The bolded word at the end is the password for the final page. While unlikely one would decode the entire limerick, here's what it should come out to be:
+    Leads to Zoe's two-stanza limerick, where a majority of letters were scrambled and color coded. The top of the page indicates a key, where you use the previous three passwords to determine the color coding system of shifting letters left/right/up/down on the keyboard. The bolded word at the end is the password for the final page. While unlikely one would decode the entire limerick, here's what it should come out to be...
    <details><summary>Bonus: Limerick</summary>
-  Apply today with splendor!
-  We hear you're quite a contender.
-  Don't forget your letter,
-  (Your chances would be better)
-  To apply you should finish this twender.
-
-  While this website's been a trek,
-  And not entirely low-tech…
-  There's one page left
-  Before you go, bereft,
-  This poem BHooveZ you to check!
+    Apply today with splendor!
+    We hear you're quite a contender.
+    Don't forget your letter,
+    (Your chances would be better)
+    To apply you should finish this twender.
+      
+    While this website's been a trek,
+    And not entirely low-tech…
+    There's one page left
+    Before you go, bereft,
+    This poem BHooveZ you to check!
 
   </details>
 - [**Links**](https://thetwender.wordpress.com/links/)
