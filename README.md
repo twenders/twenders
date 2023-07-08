@@ -13,7 +13,7 @@ To add a twender:
 
 1. make a new folder in `_posts`. The folder can have any name, but use the convention of naming it starting with the date YYYY-MM-DD.  If what you're adding consists of just a single page document, it doesn't need to be in a folder, but be sure to name it as described below.
 
-2. Within that folder, make a markdown (or HTML) file **which must be titled `YYYY-MM-DD-[title]`.md** (or .html), like `2020-05-10-bluebird.md`.  You can also put images you want to use, or other files involved into that folder, so you'll have something like this.
+2. Within that folder, make a markdown (or HTML) file **which must be titled `YYYY-MM-DD-[title].md`** (or .html), like `2020-05-10-bluebird.md`.  You can also put images you want to use, or other files involved into that folder, so you'll have something like this.
 
   ```
   _posts
