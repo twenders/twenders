@@ -43,6 +43,6 @@ Password preotected pages:
     Leads to Zoe's two-stanza limerick, where a majority of letters were scrambled and color coded. The top of the page indicates a key, where you use the previous three passwords to determine the color coding system of shifting letters left/right/up/down on the keyboard. The bolded word at the end is the password for the final page.
   </details>
 - **Links**
- <details><summary>Solution</summary>
+   <details><summary>Solution</summary>
     Password <code>BHooveZ</code>.
     Leads to the final page, which is an image of a letter of recommendation for Zev, from Zoe (certified judge of character).
