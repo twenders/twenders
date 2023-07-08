@@ -1,9 +1,9 @@
 # twenders
 a web archive of twenders, served publicly at [twenders.netlify.app](https://twenders.netlify.app)
 
-(to modify the serving of the site, go to [app.netlify.com/sites/twenders](https://app.netlify.com/sites/twenders), and use "Log in with GitHub", using the credentials for GitHub user `twenders`)
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e3537254-fb7f-4194-a066-fe5908744756/deploy-status)](https://app.netlify.com/sites/twenders/deploys)
+
+_To modify the serving of the site, go to [app.netlify.com/sites/twenders](https://app.netlify.com/sites/twenders), and use "Log in with GitHub", using the credentials for GitHub user `twenders`_
 
 ## Adding a twender
 
