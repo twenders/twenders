@@ -17,7 +17,7 @@ To add a twender:
 
   ```
   _posts
-  └── 2016-07-03-bluebird
+  └── 2020-05-10-bluebird
       ├── 2020-05-10-bluebird.md
       ├── done-kiss.jpg
       ... etc
