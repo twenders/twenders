@@ -12,10 +12,10 @@ for: Katie
 Starting note and sketch with a diagonal of empty boxes on back (solution later filled in in red):
 
 <a href="images/0-closed.jpg">
-  <img src="images/0-closed.jpg" width="200"/>
+  <img src="images/0-closed.jpg" width="250"/>
 </a>
 <a href="images/0-open.jpg">
-  <img src="images/0-open.jpg" width="200"/>
+  <img src="images/0-open.jpg" width="250"/>
 </a>
 
 Then, a series of little notes found at random points while hiking the Katahdin-Hamlin ridge loop (first note at left through fifth at right)
@@ -46,14 +46,15 @@ giving the following symbols to fill in almost all the diagonal boxes, with one 
 </pre>
 
 
-Filling in the blank with a circular shape led to the final piece 
+Filling in the blank with a circular shape (`0` or `٥`) led to the final piece 
+
 <a href="images/final-closed.jpg">
-  <img src="images/final-closed.jpg" width="200"/>
+  <img src="images/final-closed.jpg" width="250"/>
 </a>
 
 <details><summary>Inside</summary>
   <a href="images/final-open.jpg">
-    <img src="images/final-open.jpg" width="200"/>
+    <img src="images/final-open.jpg" width="500"/>
   </a>
 </details>
 
