@@ -8,6 +8,7 @@ _To modify the serving of the site, go to [app.netlify.com/sites/twenders](https
 ## Adding a twender
 
 The site is structured as a blog using [jekyll](https://jekyllrb.com/).  Each twender has a post, which is a markdown file.
+When you edit/add markdown files in this repository, an automatic build will be triggered, rendering the site (on Netlify, link above).
 
 To add a twender:
 
@@ -61,8 +62,9 @@ Take a look at what's in the repository already for an idea of how it works.  _N
 
 For more on markdown formatting, [see here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-
 ## ReactJS app
+
+The interactive [`cookle`](https://twenders.netlify.app/cookle) site is made using ReactJS, rather than markdown/jekyll.  Below are the instructions for setting that up/maintaining it.
 
 Updating:
 
