@@ -70,14 +70,13 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                       </a>.
                     </p>
                     <p className="text-sm text-gray-500">
-                      This little app was made using{' '}
+                      This little app was based on an open source clone by{' '}
                       <a
                         href="https://wordle.hannahmariepark.com/"
                         className="underline font-bold"
                       >
-                        this
-                      </a>{' '}
-                      open source clone.
+                        hannahmariepark
+                      </a>
                     </p>
                   </div>
                 </div>

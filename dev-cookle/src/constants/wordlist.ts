@@ -715,7 +715,7 @@ export const WORDS = [
   'paste',
   'given',
   'octet',
-  'risen',
+  'risen',//2023-12-18
   'groan',
   'leaky',
   'grind',
@@ -729,6 +729,7 @@ export const WORDS = [
   'awake',
   'blush',
   'focal',
+  'whelp',//2024-01-01
   'evade',
   'naval',
   'serve',
@@ -756,11 +757,10 @@ export const WORDS = [
   'floss',
   'helix',
   'croak',
-  'staff',
+  'staff',//2024-01-29
   'paper',
   'unfed',
-  'whelp',
-  'trawl',
+  'trawl',//2024-02-01
   'outdo',
   'adobe',
   'crazy',
@@ -979,6 +979,7 @@ export const WORDS = [
   'wrong',
   'noisy',
   'alert',
+  'vigly',
   'shiny',
   'elate',
   'resin',

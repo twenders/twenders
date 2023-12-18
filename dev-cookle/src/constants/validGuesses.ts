@@ -9945,6 +9945,7 @@ export const VALIDGUESSES = [
   'viffs',
   'vigas',
   'vigia',
+  'vigly',
   'vilde',
   'viler',
   'villi',
