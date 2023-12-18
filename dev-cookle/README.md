@@ -6,7 +6,7 @@ $ npm install
 $ npm run start
 ```
 
-Perhaps start with `nvm use 20` to ues node v20.
+Perhaps start with `nvm use 20` to use node v20.
 
 To update (like often updating wordlist)
 
