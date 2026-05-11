@@ -8,3 +8,7 @@ vendor
 # ignore dev- folders (for reactjs app(s))
 /dev-*/node_modules/
 /dev-*/build/
+
+# preserved history of the mm viewer's original repo, kept on disk but not tracked
+mm/_dev/.git-archive/
+mm/_dev/node_modules/
