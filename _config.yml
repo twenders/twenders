@@ -68,3 +68,4 @@ plugins:
 exclude:
   - node_modules
   - dev-*
+  - mm/README.md
