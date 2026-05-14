@@ -1,0 +1,15 @@
+# /mm used to host the standalone crossword viewer. It now lives at
+# its own site / repo (twenders/carringtonhouse → carringtonhouse.netlify.app).
+# Keep the old URL working with a permanent redirect.
+
+[[redirects]]
+  from = "/mm/*"
+  to = "https://carringtonhouse.netlify.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mm"
+  to = "https://carringtonhouse.netlify.app/"
+  status = 301
+  force = true
