@@ -75,15 +75,26 @@ cd dev-${APPNAME}
 
 To test the app, run
 ```bash
+nvm install
+nvm use
+npm ci
 npm run start
 ```
 
 To build and deploy the ReactJS app to `/${APPNAME}/` (see scripts defined in `dev-${APPNAME}/package.json`), run
 ```bash
+nvm install
+nvm use
+npm ci
 npm run deploy
 ```
 
 Then just git add the updated app folder, commit, push.
+
+The `cookle` app is maintenance-only. It is pinned in `dev-cookle` to Node
+22.22.3 and npm 10.9.8 so it can keep being rebuilt without routine framework
+or dependency upgrades. Use `npm ci`, keep the lockfile committed, and do not
+run broad dependency updates unless intentionally doing a maintenance pass.
 
 For the `cookle` app, for instance, to update the wordlist:
 
@@ -91,6 +102,5 @@ For the `cookle` app, for instance, to update the wordlist:
 2. in dev-cookle directory, run
 
   ```bash
-  npm run deploy && cd .. && git add cookle dev-cookle && git comm
-  it -m 'routine wordlist update' && git push
+  nvm install && nvm use && npm ci && npm run deploy && cd .. && git add cookle dev-cookle && git commit -m 'routine wordlist update' && git push
   ```
