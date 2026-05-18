@@ -7,7 +7,7 @@ _To modify the serving of the site, go to [app.netlify.com/sites/twenders](https
 
 ## Local Jekyll development
 
-The archive site is built with Ruby 4.0.3 and Jekyll 4.4.x. Install the Ruby
+The archive site is built with Ruby 4.0.4 and Jekyll 4.4.x. Install the Ruby
 version in `.ruby-version`, then run:
 
 ```bash
