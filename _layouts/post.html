@@ -13,35 +13,31 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
-    <div class="infobox">
-      <table>
-        <tr>
-          <th>for</th>
-          <td>{{ page.for }}</td>
-        </tr>
-        <tr>
-          <th>organized by</th>
-          <td>
-            <ul>
-              {% for person in page.organizers %}
-                <li>{{ person }}</li>
-              {% endfor %}
-            </ul>
-        </tr>
-        <tr>
-          <th>twendercrafters</th>
-          <td>
-            <ul>
-              {% for person in page.twendercrafters %}
-                <li>{{ person }}</li>
-              {% endfor %}
-            </ul>
-          </td>
-        </tr>
-      </table>
-      {{ page.description }}
+    <div class="twender-meta">
+      <dl class="twender-meta-list">
+        {%- if page.for -%}
+          <div class="twender-meta-row">
+            <dt>for</dt>
+            <dd>{{ page.for }}</dd>
+          </div>
+        {%- endif -%}
+        {%- if page.organizers and page.organizers.size > 0 -%}
+          <div class="twender-meta-row">
+            <dt>organized by</dt>
+            <dd>{{ page.organizers | join: ", " }}</dd>
+          </div>
+        {%- endif -%}
+        {%- if page.twendercrafters and page.twendercrafters.size > 0 -%}
+          <div class="twender-meta-row">
+            <dt>twendercrafters</dt>
+            <dd>{{ page.twendercrafters | join: ", " }}</dd>
+          </div>
+        {%- endif -%}
+      </dl>
+      {%- if page.description -%}
+        <p class="twender-meta-description">{{ page.description }}</p>
+      {%- endif -%}
     </div>
-    <hr/>
   </header>
 
   

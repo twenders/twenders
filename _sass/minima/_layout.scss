@@ -5,14 +5,57 @@
  * Custom additions
  */
 
-.infobox {
-  background-color: rgba(0, 0, 0, 0.05);
-  text-align: center;
-  vertical-align: middle;
-  padding: 5px;
+.twender-meta {
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
+  color: $grey-color-dark;
+  margin-top: math.div($spacing-unit, 2);
+  padding: math.div($spacing-unit, 2) 0;
+}
 
-  table {
+.twender-meta-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: $spacing-unit;
+  row-gap: math.div($spacing-unit, 4);
+  margin: 0;
+}
+
+.twender-meta-row {
+  display: contents;
+}
+
+.twender-meta dt {
+  color: $grey-color;
+  font-size: $small-font-size;
+  margin: 0;
+}
+
+.twender-meta dd {
+  margin: 0;
+}
+
+.twender-meta-description {
+  border-top: 1px solid $grey-color-light;
+  margin: math.div($spacing-unit, 2) 0 0;
+  padding-top: math.div($spacing-unit, 2);
+
+  &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@include media-query($on-palm) {
+  .twender-meta-list {
+    display: block;
+  }
+
+  .twender-meta-row {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: math.div($spacing-unit, 3);
+    }
   }
 }
 
@@ -247,7 +290,6 @@
 
 .post-title {
   @include relative-font-size(2.625);
-  letter-spacing: -1px;
   line-height: 1;
 
   @include media-query($on-laptop) {
