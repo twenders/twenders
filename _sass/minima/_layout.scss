@@ -6,11 +6,13 @@
  */
 
 .twender-meta {
-  border-top: 1px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
+  background-color: rgba(0, 0, 0, 0.025);
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
   color: $grey-color-dark;
+  font-size: $small-font-size;
   margin-top: math.div($spacing-unit, 2);
-  padding: math.div($spacing-unit, 2) 0;
+  padding: math.div($spacing-unit, 2);
 }
 
 .twender-meta-list {
@@ -27,7 +29,6 @@
 
 .twender-meta dt {
   color: $grey-color;
-  font-size: $small-font-size;
   margin: 0;
 }
 
