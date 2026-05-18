@@ -15,6 +15,9 @@ bundle install
 bundle exec jekyll serve
 ```
 
+The site does not use an external Jekyll theme. The small archive layout lives
+in `_layouts`, `_includes`, and `assets/main.scss`.
+
 ## Adding a twender
 
 The site is structured as a blog using [jekyll](https://jekyllrb.com/).  Each twender has a post, which is a markdown file.

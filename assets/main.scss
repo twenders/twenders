@@ -1,5 +1,368 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@use "minima";
+@use "sass:color";
+@use "sass:math";
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$small-font-size: 0.875rem;
+$line-height: 1.5;
+$spacing-unit: 30px;
+$content-width: 800px;
+
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+$muted-color: #666;
+$border-color: #e8e8e8;
+$header-color: #424242;
+$callout-color: rgba(0, 0, 0, 0.025);
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $background-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  font: 400 #{$base-font-size}/#{$line-height} $font-family;
+  font-kerning: normal;
+  min-height: 100vh;
+  text-size-adjust: 100%;
+}
+
+main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: math.div($spacing-unit, 2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: color.adjust($brand-color, $lightness: -15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption,
+.post-meta,
+.twender-meta,
+.site-footer {
+  font-size: $small-font-size;
+}
+
+ul,
+ol {
+  margin-left: $spacing-unit;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid $border-color;
+  color: $muted-color;
+  font-size: 1.125rem;
+  font-style: italic;
+  padding-left: math.div($spacing-unit, 2);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+pre,
+code {
+  background: #eef;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  font-size: 0.9375rem;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 8px 12px;
+
+  > code {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.highlight {
+  background: #eef;
+  margin-bottom: math.div($spacing-unit, 2);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $content-width;
+  padding: 0 $spacing-unit;
+  width: 100%;
+}
+
+.site-header {
+  border-top: 5px solid $header-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.site-header .wrapper {
+  align-items: baseline;
+  display: flex;
+  gap: $spacing-unit;
+  justify-content: space-between;
+  padding-bottom: math.div($spacing-unit, 2);
+  padding-top: math.div($spacing-unit, 2);
+}
+
+.site-title {
+  color: $header-color;
+  font-size: 1.625rem;
+  font-weight: 300;
+
+  &:visited {
+    color: $header-color;
+  }
+}
+
+.site-nav {
+  display: flex;
+  gap: math.div($spacing-unit, 2);
+}
+
+.page-link {
+  color: $text-color;
+}
+
+.page-content {
+  flex: 1;
+  padding: $spacing-unit 0;
+}
+
+.site-footer {
+  border-top: 1px solid $border-color;
+  color: $muted-color;
+  padding: $spacing-unit 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: math.div($spacing-unit, 4) math.div($spacing-unit, 2);
+}
+
+.footer-title,
+.footer-description,
+.footer-links {
+  margin-bottom: 0;
+}
+
+.footer-title {
+  color: $header-color;
+  flex-basis: 100%;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: math.div($spacing-unit, 2);
+  list-style: none;
+  margin-left: 0;
+}
+
+.page-heading {
+  font-size: 2rem;
+}
+
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-list-heading {
+  font-size: 1.75rem;
+}
+
+.post-meta {
+  color: $muted-color;
+}
+
+.post-link {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 2.625rem;
+  line-height: 1;
+  margin-bottom: math.div($spacing-unit, 4);
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+.twender-meta {
+  background: $callout-color;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  color: $header-color;
+  margin-top: math.div($spacing-unit, 2);
+  padding: math.div($spacing-unit, 2);
+}
+
+.twender-meta-list {
+  column-gap: $spacing-unit;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin: 0;
+  row-gap: math.div($spacing-unit, 4);
+}
+
+.twender-meta-row {
+  display: contents;
+}
+
+.twender-meta dt {
+  color: $muted-color;
+  margin: 0;
+}
+
+.twender-meta dd {
+  margin: 0;
+}
+
+.twender-meta-description {
+  border-top: 1px solid $border-color;
+  margin: math.div($spacing-unit, 2) 0 0;
+  padding-top: math.div($spacing-unit, 2);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.centered-page {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: $spacing-unit 0;
+  }
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding-left: math.div($spacing-unit, 2);
+    padding-right: math.div($spacing-unit, 2);
+  }
+
+  .post-title {
+    font-size: 2.25rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.375rem;
+  }
+
+  .post-content h4 {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-header .wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: math.div($spacing-unit, 4);
+  }
+
+  .twender-meta-list,
+  .twender-meta-row {
+    display: block;
+  }
+
+  .twender-meta-row:not(:last-child) {
+    margin-bottom: math.div($spacing-unit, 3);
+  }
+
+  .centered-page h1 {
+    font-size: 3rem;
+  }
+}
