@@ -5,6 +5,16 @@ a web archive of twenders, served publicly at [twenders.netlify.app](https://twe
 
 _To modify the serving of the site, go to [app.netlify.com/sites/twenders](https://app.netlify.com/sites/twenders), and use "Log in with GitHub", using the credentials for GitHub user `twenders`_
 
+## Local Jekyll development
+
+The archive site is built with Ruby 4.0.3 and Jekyll 4.4.x. Install the Ruby
+version in `.ruby-version`, then run:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
 ## Adding a twender
 
 The site is structured as a blog using [jekyll](https://jekyllrb.com/).  Each twender has a post, which is a markdown file.
